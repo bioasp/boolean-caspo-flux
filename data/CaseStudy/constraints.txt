@@ -1,0 +1,6 @@
+obj : MAX(Growth)
+
+Tc1 0	10.5
+Tc2 0	10.5
+Growth 0	1000
+

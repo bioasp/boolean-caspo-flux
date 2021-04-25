@@ -1,0 +1,7 @@
+Carbon1	RPcl
+Carbon2	RPcl
+Oxygen	RPO2
+Rres	RPO2
+RPO2	Rres
+RPcl	Tc2
+RPcl	Tc1
