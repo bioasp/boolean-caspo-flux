@@ -8,4 +8,4 @@ You can execute them in a [Docker](https://docker.io) environment:
 docker build -t boolean-caspo-flux .
 docker run -it --rm -p 8888:8888 -v $PWD:/notebook boolean-caspo-flux
 ```
-then point your browser to https://127.0.0.1:8888.
+then point your browser to http://127.0.0.1:8888.
