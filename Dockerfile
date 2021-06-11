@@ -12,6 +12,8 @@ ARG BONESIS_VERSION=6a6a7cf2731abc0e664b10146d03824f91c4a955
 RUN pip install --no-cache https://github.com/bioasp/bonesis/archive/$BONESIS_VERSION.zip
 
 Run rm -rf /notebook/*
-COPY --chown=user:user *.ipynb data dist /notebook/
+COPY --chown=user:user *.ipynb /notebook/
+COPY --chown=user:user data /notebook/data/
+COPY --chown=user:user dist /notebook/dist/
 
 USER user
