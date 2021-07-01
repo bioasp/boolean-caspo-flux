@@ -6,7 +6,7 @@ RUN apt update \
     && apt clean -y \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install --no-cache python-libsbml
+RUN pip install --no-cache python-libsbml==5.19.0
 
 ARG BONESIS_VERSION=6a6a7cf2731abc0e664b10146d03824f91c4a955
 RUN pip install --no-deps --no-cache https://github.com/bioasp/bonesis/archive/$BONESIS_VERSION.zip
