@@ -13,8 +13,6 @@ RUN pip install --no-deps --no-cache https://github.com/bioasp/bonesis/archive/$
 
 RUN rm -rf /notebook/*
 COPY --chown=user:user *.ipynb /notebook/
-COPY --chown=user:user data /notebook/data/
-COPY --chown=user:user dist /notebook/dist/
-COPY --chown=user:user simulations /notebook/simulations/
+ADD --chown=user:user *.tar* /notebook/
 
 USER user
