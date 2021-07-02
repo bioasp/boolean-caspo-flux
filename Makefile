@@ -1,6 +1,6 @@
 
-IMAGE=pauleve/boolean-caspo-flux
-TAG=latest
+IMAGE=bioasp/boolean-caspo-flux
+TAG=cmsb2021
 
 image: prepare-source
 	docker build -t $(IMAGE):$(TAG) .
