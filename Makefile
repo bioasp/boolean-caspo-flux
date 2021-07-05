@@ -4,6 +4,8 @@ TAG=cmsb2021
 
 image: prepare-source
 	docker build -t $(IMAGE):$(TAG) .
+publish:
+	docker push $(IMAGE):$(TAG)
 
 test:
 	colomoto-docker -V $(TAG) --no-update --image $(IMAGE) -e COLOMOTO_SKIP_JUPYTER_JS=1 jupyter nbconvert --execute --inplace *.ipynb
